@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MinhaHome from './home';
+import MinhaOferta from './Oferta';
 
-import Minha_Oferta from '.';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
  <React.StrictMode>
   <BrowserRouter>
-    <Router>
       <Routes>
-        <Route path='/home' element={<minha_home/>} />
-        <Route path='/oferta' element={<Minha_Oferta />} />
+        <Route path='/' element={<MinhaHome/>} />
+        <Route path='/oferta' element={<MinhaOferta />} />
       </Routes>
-    </Router>
     </BrowserRouter>
   </React.StrictMode>,
 );

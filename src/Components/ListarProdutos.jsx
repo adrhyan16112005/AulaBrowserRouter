@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
-
 import React from 'react';
 
-export default function ListarProdutos({ produtos, title }) {
+export default function ListarProdutos({ produtos, title}) {
     return (
         <div className="bloco-principal">
             <h1>{title}</h1>
@@ -12,17 +10,12 @@ export default function ListarProdutos({ produtos, title }) {
                         <img src={produto.imagem} alt={produto.nome} />
                         <p>{produto.nome}</p>
                         <p>{produto.preco}</p>
-                        <p>{produto.descricao}</p>
-                        {/* Se você precisar adicionar um botão "Quero", ele deve ser manipulado pelo componente pai */}
+                        <p>Ano: {produto.ano}</p>
+                        <p>Cor: {produto.cor}</p>
+            
                     </div>
                 ))}
             </div>
         </div>
     );
 }
-
-    
-    
-    return(
-        <p>{title}</p>
-    )
