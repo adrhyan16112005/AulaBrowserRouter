@@ -1,0 +1,83 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #0cd168;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Bloco Principal */
+.bloco-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.bloco-produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Card do Produto */
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.produto h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.produto p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #e63946;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%;
+        max-width: 300px;
+    }
+}

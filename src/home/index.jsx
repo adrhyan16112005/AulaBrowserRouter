@@ -11,15 +11,15 @@ export default function MinhaHome() {
         {
             id: 1,
             nome: "Volkswagen Parati CL 1.8",
-            imagem: "https://www.motor1.com/images/mgl/jz5le/s1/volkswagen-parati.jpg",
+            imagem: "https://img.olx.com.br/images/66/664438198050714.jpg",
             preco: "R$29.990",
-            ano: 1992,
+            ano: 1993,
             cor: "Verde"
         },
         {
             id: 2,
             nome: "Porsche 911 Turbo",
-            imagem: "https://www.porsche.com/mediacenter/pdfs/911-turbo.jpg",
+            imagem: "https://robbreport.com/wp-content/uploads/2020/04/1-6.jpg?w=1000.jpg",
             preco: "R$85.000",
             ano: 2023,
             cor: "Vermelho"
@@ -27,7 +27,7 @@ export default function MinhaHome() {
         {
             id: 3,
             nome: "Volkswagen Karmann Ghia",
-            imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Volkswagen_Karmann_Ghia.jpg/1200px-Volkswagen_Karmann_Ghia.jpg",
+            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiQ-D0VyDRhgSZ5yjs5aOcKS13dtZa5R-hg&s.jpg",
             preco: "R$180.000",
             ano: 1970,
             cor: "Amarelo"
@@ -35,7 +35,7 @@ export default function MinhaHome() {
         {
             id: 4,
             nome: "Willys Rural 3.0",
-            imagem: "https://www.automaistv.com.br/wp-content/uploads/2021/08/Willys-Rural-2021-01.jpg",
+            imagem: "https://blog.jocar.com.br/wp-content/uploads/2019/06/willys_rural_4-990x660.jpg",
             preco: "R$40.000",
             ano: 1975,
             cor: "Azul"
@@ -43,7 +43,7 @@ export default function MinhaHome() {
         {
             id: 5,
             nome: "Jeep Wrangler TJ 1999",
-            imagem: "https://cdn.autopapo.com.br/wp-content/uploads/2022/01/jeep-wrangler-tj-1999.jpg",
+            imagem: "https://img.olx.com.br/images/57/573483542372272.jpg",
             preco: "R$110.000",
             ano: 1999,
             cor: "Preto"
