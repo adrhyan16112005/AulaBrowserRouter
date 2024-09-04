@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MinhaHome from './home';
+import MinhaHome from './home/index';
 import MinhaOferta from './Oferta';
 
 

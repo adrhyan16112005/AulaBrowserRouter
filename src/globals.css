@@ -1,83 +1,161 @@
-/* Estilos Globais */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Altere para a fonte que preferir */
 }
 
-header, footer {
-    background-color: #0cd168;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.cabecalho {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  color: white;
+  background-color: #00acf0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
+/* Produto estilização */
 
-footer p {
-    margin: 0;
-    font-style: italic;
-}
-
-/* Bloco Principal */
 .bloco-principal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00acf0;
 }
 
 .bloco-produtos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Diminuído para aproximar os cards */
+  padding: 15px;
 }
 
-/* Card do Produto */
-.produto {
-    background-color: white;
+.bloco-produtos > div {
+  border-radius: 10px;
+  box-shadow: rgba(8, 168, 241, 0.952) 0px 5px 15px;
+  overflow: hidden; /* Garante que a imagem se encaixe corretamente no card */
+}
+
+.bloco-produtos img {
+  width: 100%; /* Garante que todas as imagens ocupem 100% da largura do card */
+  height: 150px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Mantém a proporção da imagem, cortando se necessário */
+}
+
+.bloco-produtos > div > button {
+  margin-top: 5px;
+  margin: 5px;
+  background-color: #a3e2da;
+  color: white;
+  border-style: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rodape {
+  text-align: center;
+  font-style: italic;
+  color: white;
+  background-color: #000000;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ul > li {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  height: 100px;
+  width: 300px;
+  cursor: pointer;
+  margin: 50px;
+  display: inline;
+  font-size: 30px;
+  color: rgb(166, 209, 235);
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  li {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: 25px;
+    font-size: 30px;
+    color: rgb(226, 170, 170);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
-    overflow: hidden;
-    width: 250px;
+  }
+  .cabecalho {
     text-align: center;
-    padding: 15px;
+  }
 }
 
-.produto img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ddd;
+@media (max-width: 430px) {
+  li {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(235, 173, 173);
+    border-radius: 10px;
+  }
+  .cabecalho {
+    text-align: center;
+  }
+}
+.bloco-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4; /* Cor de fundo opcional */
+  padding: 20px;
 }
 
-.produto h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
+.bloco-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espaço entre os cards */
+  justify-content: center;
 }
 
-.produto p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #e63946;
+.produto-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  width: 200px; /* Ajuste conforme necessário */
+  padding: 10px;
+  margin: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .produto {
-        width: 200px;
-    }
+.produto-imagem {
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px;
+  object-fit: cover; /* Ajusta a imagem para cobrir o card sem distorcer */
 }
 
-@media (max-width: 480px) {
-    .produto {
-        width: 100%;
-        max-width: 300px;
-    }
+.produto-nome,
+.produto-preco {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
 }

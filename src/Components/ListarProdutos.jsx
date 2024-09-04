@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function ListarProdutos({ produtos, title}) {
+export default function ListarProdutos({ produtos}) {
     return (
         <div className="bloco-principal">
-            <h1>{title}</h1>
             <div className="bloco-produtos">
                 {produtos.map((produto) => (
                     <div key={produto.id} className="produto-item">
