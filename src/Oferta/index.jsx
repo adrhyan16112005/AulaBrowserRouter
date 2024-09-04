@@ -6,7 +6,7 @@ import "../globals.css";
 import Footer from "../Components/Footer";
 import ListarProdutos from "../Components/ListarProdutos";
 
-export default function MinhaHome() {
+export default function MinhaOferta() {
     const [listaProdutos, setProdutos] = useState([
         {
             id: 1,

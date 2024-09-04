@@ -11,7 +11,8 @@ export default function ListarProdutos({ produtos}) {
                         <p>{produto.preco}</p>
                         <p>Ano: {produto.ano}</p>
                         <p>Cor: {produto.cor}</p>
-            
+                
+
                     </div>
                 ))}
             </div>
